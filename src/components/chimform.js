@@ -16,7 +16,7 @@ class ChimForm extends React.Component{
         return(
             <form ref={(el) => this.myForm = el} target="_self">
                 <legend>Химические вещества</legend>
-                <input placeholder="Температура С" onChange={(e)=> this.setState({temp:e.target.value})} required type="number" min="273" max="1000" step="any"/>
+                <input placeholder="Температура С" onChange={(e)=> this.setState({temp:e.target.value})} required type="number" min="298" max="1000" step="any"/>
                 <legend>Состав в процентах</legend>
                 <input placeholder="Метан" onChange={(e)=> this.setState({methane:e.target.value})} type="number" min="0" max="100" step="any"/>
                 <input placeholder="Этан" onChange={(e)=> this.setState({ethane:e.target.value})} type="number" min="0" max="100" step="any"/>
@@ -33,7 +33,7 @@ class ChimForm extends React.Component{
                     let b = Number(this.chim.temp)
                     
                     if((a > 100 || a < 100) || (b > 1000 || b < 273)){
-
+                        
                     }
                     
                     else {
