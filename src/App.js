@@ -1,5 +1,6 @@
 import React from "react";
 import ChimForm from "./components/chimform";
+import axios from "axios"
 class App extends React.Component{
     render(){
         return(
@@ -11,14 +12,14 @@ class App extends React.Component{
                 </nav>
                 </header>
             <main>
-                <ChimForm sChim ={this.sendChim}/>
+                <ChimForm/>
             </main>
             </div>
         )}
 
-    sendChim(test){
+    /*sendChim(test){
         console.log(test)
-    }
+    }*/
 
 }
 
